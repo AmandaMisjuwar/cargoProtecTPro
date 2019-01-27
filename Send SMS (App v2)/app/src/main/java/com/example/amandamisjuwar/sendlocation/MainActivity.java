@@ -1,6 +1,5 @@
 package com.example.amandamisjuwar.sendlocation;
 
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -11,21 +10,15 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 
 
-
 public class MainActivity extends AppCompatActivity  {
-
     private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 1;
-  
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         checkForSmsPermission();
-
-
-
     }
-
 
     public void sendSms(View view) {
         // hardcoding the number we need to send emergency text to
