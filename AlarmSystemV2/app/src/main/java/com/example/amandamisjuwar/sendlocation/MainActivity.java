@@ -1,6 +1,5 @@
 package com.example.amandamisjuwar.sendlocation;
 
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -18,10 +17,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-
 public class MainActivity extends AppCompatActivity  {
-
     private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 1;
+<<<<<<< HEAD:AlarmSystemV2/app/src/main/java/com/example/amandamisjuwar/sendlocation/MainActivity.java
 
     Timer timer=null;
     int time=0;
@@ -54,16 +52,15 @@ queue.add(stringRequest);
 
 
 
+=======
+    
+>>>>>>> 2bc639b9dd44f2493c9d212fcf2c264d1e009400:Send SMS (App v2)/app/src/main/java/com/example/amandamisjuwar/sendlocation/MainActivity.java
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         checkForSmsPermission();
-
-
-
     }
-
 
     public void sendSms(View view) {
         // hardcoding the number we need to send emergency text to
